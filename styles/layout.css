@@ -1,0 +1,146 @@
+#mainContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#topContainer {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 52%;
+  width: 100%;
+}
+
+#bottomContainer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 48%;
+  width: 100%;
+}
+
+.colorbox {
+  background-color: black;
+  width: 12px;
+  height: 72px;
+}
+
+html {
+  @apply text-base;
+}
+
+.slidev-layout {
+  @apply w-full px-0 py-6;
+
+  font-variant-ligatures: none;
+  text-align: justify;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  div {
+    @apply select-text;
+  }
+
+  h1 {
+    @apply font-bold;
+  }
+
+  h1+h2 {
+    @apply -mt-4;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+
+  p {
+    @apply mt-4 mb-4;
+  }
+
+  p:first-child {
+    @apply mt-0 mb-4;
+  }
+
+  p:last-child {
+    @apply mb-0;
+  }
+
+  p+h2,
+  ul+h2,
+  table+h2 {
+    @apply mt-10;
+  }
+
+  blockquote>* {
+    @apply my-0;
+  }
+
+  ul {
+    list-style: square;
+    list-style-position: inside;
+  }
+
+  ul ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
+  ul ul ul {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  li>ul,
+  li>ol,
+  ul:first-child,
+  ol:first-child {
+    margin-top: 0;
+  }
+
+  .katex-display {
+    @apply my-0
+  }
+
+  th {
+    @apply font-bold;
+  }
+
+  td {
+    @apply py-1.5;
+  }
+
+  li {
+    line-height: 1.5em;
+  }
+
+}
+
+.slidev-layout.intro,
+.slidev-layout.cover {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl font-700 leading-20;
+  }
+
+  h1+p {
+    @apply font-700 -mt-4 text-2xl;
+  }
+}
+
+:not(li)>ul>li:not(li:first-child),
+:not(li)>ol>li:not(li:first-child) {
+  margin-top: 1rem;
+}
+
+html.dark .diagram {
+  filter: invert(0.92) !important;
+}

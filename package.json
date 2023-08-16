@@ -1,0 +1,50 @@
+{
+  "name": "slidev-theme-nxyz",
+  "version": "0.0.1",
+  "description": "Minimalistic sli.dev theme.",
+  "license": "MIT",
+  "author": {
+    "name": "Nicklas S. Andersen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicklasxyz/slidev-theme-nxyz"
+  },
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "slidev": ">=0.19.3"
+  },
+  "scripts": {
+    "build": "slidev build main.md",
+    "dev": "slidev main.md --open",
+    "export": "slidev export main.md",
+    "screenshot": "slidev export main.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^0.42.5",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.4",
+    "theme-vitesse": "^0.7.2"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.54",
+    "@slidev/cli": "^0.42.5"
+  },
+  "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
+  "slidev": {
+    "colorSchema": "light",
+    "highlighter": "prism",
+    "defaults": {
+      "fonts": {
+        "sans": "Ubunto",
+        "serif": "Kreon",
+        "mono": "Ubunto Monospace"
+      },
+      "hightlighter": "prism"
+    }
+  }
+}
