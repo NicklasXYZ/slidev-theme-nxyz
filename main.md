@@ -16,7 +16,7 @@ author: "Name N. Nameson"
 university: "University of XYZ"
 department: "Department of XYZ"
 coverImagePath: "../img/building.png"
-barBottomText: "NXYZ Theme .::.  Lecture 1, Week X"
+barBottomText: ""
 ---
 
 <!-- Cover slide: Keep empty -->

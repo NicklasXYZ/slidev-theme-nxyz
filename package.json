@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@slidev/cli": "^0.42.5"
+    "@slidev/cli": "^0.42.5",
+    "playwright-chromium": "^1.37.0"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
