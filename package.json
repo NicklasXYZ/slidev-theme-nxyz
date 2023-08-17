@@ -1,26 +1,22 @@
 {
   "name": "slidev-theme-nxyz",
-  "version": "0.0.1",
-  "description": "Minimalistic sli.dev theme.",
-  "license": "MIT",
-  "author": {
-    "name": "Nicklas S. Andersen"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nicklasxyz/slidev-theme-nxyz"
-  },
-  "keywords": [
-    "slidev-theme",
-    "slidev"
-  ],
+  "version": "0.0.2",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
   },
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "takahashi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicklasxyz/slidev-theme-nxyz"
+  },
   "scripts": {
-    "build": "slidev build main.md",
     "dev": "slidev main.md --open",
+    "build": "slidev build main.md",
     "export": "slidev export main.md",
     "screenshot": "slidev export main.md --format png"
   },
@@ -32,13 +28,12 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@slidev/cli": "^0.42.5",
-    "playwright-chromium": "^1.37.0"
+    "@slidev/cli": "^0.42.5"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
     "colorSchema": "light",
-    "highlighter": "prism",
+    "highlighter": "all",
     "defaults": {
       "fonts": {
         "sans": "Ubunto",
