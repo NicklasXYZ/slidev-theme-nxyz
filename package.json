@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-nxyz",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
