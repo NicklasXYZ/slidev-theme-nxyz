@@ -302,8 +302,47 @@ slideSubtitle: "With a Table"
 
 Here is a nice table:
 
-|                 | Column 2      | Column 3 - | Column 4 |
+|                 | Column 2      | Column 3   | Column 4 |
 | --------------- |--------------:| ----------:|---------:|
 | Row 1           | A             | $1.600,00  | €1.470,43|
 | Row 2           | B             |   $12,00   | €11,03   |
 | Row 3           | C             |    $1,00   | €2,76    |
+
+
+
+
+---
+layout: "default"
+slideTitle: "Top, Three-Column, Bottom Slide" 
+slideSubtitle: "With Some More Mathematics"
+---
+
+The two systems of linear equations 
+
+<div/>
+
+::left::
+$$
+\begin{align*}
+2x_1 +           x_2 &= 2 \\
+3x_1 + \phantom{x_2} &= 2
+\end{align*}
+$$
+
+::middle::
+
+<div class="my-4"/>
+
+and
+
+::right::
+$$
+\begin{align*}
+x_1 + x_2 &= 2 \\
+      x_2 &= 2
+\end{align*}
+$$
+
+::bottom::
+
+are equivalent because both systems have the unique solution: $x_1 = 1$, $x_2 = 0$.

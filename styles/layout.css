@@ -135,12 +135,3 @@ html {
     @apply font-700 -mt-4 text-2xl;
   }
 }
-
-:not(li)>ul>li:not(li:first-child),
-:not(li)>ol>li:not(li:first-child) {
-  margin-top: 1rem;
-}
-
-html.dark .diagram {
-  filter: invert(0.92) !important;
-}

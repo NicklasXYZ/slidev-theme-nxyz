@@ -24,7 +24,7 @@ const props = defineProps({
           {{ slideTitle }}
        </div>
         <div v-if="slideSubtitle">
-          <div class="text-sm tracking-wide font-500 opacity-50">
+          <div class="text-lg tracking-wide font-500 opacity-50">
             - {{ slideSubtitle }}
           </div>
         </div>
@@ -38,6 +38,9 @@ const props = defineProps({
     </div>
     <div class="left" :class="props.class">
       <slot name="left"/>
+    </div>
+    <div class="middle" :class="props.class">
+      <slot name="middle"/>
     </div>
     <div class="right" :class="props.class">
       <slot name="right"/>
@@ -53,26 +56,53 @@ const props = defineProps({
 <style>
 .col-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content auto min-content;
-  grid-column-gap: 3rem;
+  grid-template-columns: 1fr auto 1fr;
+  /* grid-template-rows: min-content auto min-content; */
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 1.5rem;
   grid-row-gap: 0;
-  height: 100%;
+  /* height: 100%; */
+  grid-template-areas:
+  "top top top"
+  "left middle right"
+  "bottom bottom bottom"
 }
 
+
+
 .top {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: top;
 }
 
 .left {
-  grid-area: 2 / 1 / 3 / 2;
+  grid-area: left;
+}
+
+.middle {
+  grid-area: middle;
 }
 
 .right {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: right;
 }
 
 .bottom {
-  grid-area: 3 / 1 / 4 / 3;
+  grid-area: bottom;
 }
+
+/* .top {
+  grid-area: 1 / 1 / 2 / 3;
+} */
+
+/* .left {
+  grid-area: 2 / 1 / 3 / 2;
+} */
+
+/* .right {
+  grid-area: 2 / 2 / 3 / 3;
+} */
+
+/* .bottom {
+  grid-area: 3 / 1 / 4 / 3;
+} */
 </style>
