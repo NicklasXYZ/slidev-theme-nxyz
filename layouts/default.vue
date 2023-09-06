@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-<div class="slidev-layout">
+<div class="slidev-layout default">
   <div v-if="slideTitle">
     <div class="flex items-center justify-left pb-6">
       <div class="colorbox"/>

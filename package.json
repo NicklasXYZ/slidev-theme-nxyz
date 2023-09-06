@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-nxyz",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": ">=14.0.0",
     "slidev": ">=0.19.3"
@@ -21,6 +21,7 @@
     "screenshot": "slidev export main.md --format png"
   },
   "dependencies": {
+    "@slidev/theme-default": "^0.21.2",
     "@slidev/types": "^0.42.5",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.4",
@@ -28,7 +29,8 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@slidev/cli": "^0.42.5"
+    "@slidev/cli": "^0.42.5",
+    "playwright-chromium": "^1.37.1"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {

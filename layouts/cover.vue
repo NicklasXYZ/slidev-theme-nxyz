@@ -26,7 +26,7 @@ const props = defineProps({
 </script>
 
 <template>
-<div class="slidev-layout">
+<div class="slidev-layout cover">
   <div id="mainContainer">
     
     <img :src=coverImagePath id="topContainer" class="overflow-y-hidden" alt="Cover Slide Banner">
@@ -36,15 +36,15 @@ const props = defineProps({
         <div class="flex items-center justify-left pb-6">
           <div class="colorbox"/>
           <div class="px-3">    
-          <div class="text-4xl leading-10 font-semibold tracking-wide -ml-0.75">
-            {{ slideTitle }}
-          </div>
-          <div v-if="slideSubtitle">
-            <div class="text-sm tracking-wide font-500 opacity-50">
-              - {{ slideSubtitle }}
+            <div class="text-4xl leading-10 font-semibold tracking-wide -ml-0.75">
+              {{ slideTitle }}
+            </div>
+            <div v-if="slideSubtitle">
+              <div class="text-lg tracking-wide font-500 opacity-50">
+                - {{ slideSubtitle }}
+              </div>
             </div>
           </div>
-        </div>
       </div>
     
       <div class="pb-6 mt-0 ml-5.75 mr-5.75">

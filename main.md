@@ -57,6 +57,49 @@ A simple one-column slide with nested-lists:
 
 ---
 layout: "default"
+slideTitle: "One-Column Slide"
+slideSubtitle: "With Nested Lists and Long Paragraphs" 
+---
+
+A simple one-column slide with nested-lists and long paragraphs:
+
+- Donec quis mauris non risus tristique dignissim convallis id velit
+  - Item Donec rutrum risus nec velit blandit, non pellentesque enim viverra. Donec sollicitudin nulla commodo libero ullamcorper commodo.
+  - Mauris feugiat risus eros, a scelerisque tellus cursus sed. Nam pretium lacus dui, vel interdum ante euismod at. In at risus sit amet nunc congue cursus quis sed orci
+- Praesent mollis sed orci ac fringilla. Ut vel velit et velit posuere porttitor
+  - Morbi nec nibh et odio ultrices aliquet sit amet vel neque. Ut et est orci. 
+    - Phasellus ullamcorper dictum ligula vitae porttitor. Aenean molestie facilisis hendrerit. 
+    - Mauris purus risus, pellentesque ut pulvinar in, facilisis sed sapien.
+    - Suspendisse at tellus blandit, fringilla velit eget, faucibus mi.
+
+---
+layout: "default"
+slideTitle: "Two-Column Slide"
+slideSubtitle: "With Nested Lists and Long Paragraphs" 
+---
+
+::left::
+
+One-column with nested-lists and long paragraphs:
+
+- Donec quis mauris non risus tristique dignissim convallis id velit
+  - Item Donec rutrum risus nec velit blandit, non pellentesque enim viverra. Donec sollicitudin nulla commodo libero ullamcorper commodo.
+- Praesent mollis sed orci ac fringilla. Ut vel velit et velit posuere porttitor
+  - Morbi nec nibh et odio ultrices aliquet sit amet vel neque. Ut et est orci. 
+
+::right::
+
+Another one-column with nested-lists and long paragraphs:
+
+- Donec quis mauris non risus tristique dignissim convallis id velit
+  - Item Donec rutrum risus nec velit blandit, non pellentesque enim viverra. Donec sollicitudin nulla commodo libero ullamcorper commodo.
+- Praesent mollis sed orci ac fringilla. Ut vel velit et velit posuere porttitor
+  - Morbi nec nibh et odio ultrices aliquet sit amet vel neque. Ut et est orci. 
+
+
+
+---
+layout: "default"
 slideTitle: "Two-Column Slide"
 slideSubtitle: "With a List & Image"
 ---

@@ -5,17 +5,17 @@
 }
 
 #topContainer {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 52%;
   width: 100%;
 }
 
 #bottomContainer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   height: 48%;
   width: 100%;
 }
@@ -30,11 +30,39 @@ html {
   @apply text-base;
 }
 
-.slidev-layout {
+.slidev-layout.cover {
+  @apply w-full px-0 py-0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  div {
+    @apply select-text;
+  }
+
+  h1 {
+    @apply font-bold;
+  }
+
+  h1+h2 {
+    @apply -mt-4;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+}
+
+.slidev-layout.default {
   @apply w-full px-0 py-6;
 
   font-variant-ligatures: none;
-  text-align: justify;
 
   h1,
   h2,
@@ -85,17 +113,17 @@ html {
 
   ul {
     list-style: square;
-    list-style-position: inside;
+    list-style-position: outside;
   }
 
   ul ul {
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
   }
 
   ul ul ul {
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
   }
 
   li>ul,
@@ -121,17 +149,4 @@ html {
     line-height: 1.5em;
   }
 
-}
-
-.slidev-layout.intro,
-.slidev-layout.cover {
-  @apply h-full grid;
-
-  h1 {
-    @apply text-6xl font-700 leading-20;
-  }
-
-  h1+p {
-    @apply font-700 -mt-4 text-2xl;
-  }
 }

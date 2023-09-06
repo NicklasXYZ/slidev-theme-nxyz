@@ -71,13 +71,13 @@ Then we get the following:
 
 Some additional examples based on the  `main.md` file in this repo can be seen in the following:
 
-![cover](img/default2.png)
-![cover](img/default3.png)
-![cover](img/default4.png)
-![cover](img/default5.png)
-![cover](img/default6.png)
-![cover](img/default7.png)
-![cover](img/default8.png)
-![cover](img/default9.png)
-![cover](img/default10.png)
-![cover](img/default11.png)
+![cover](main-export/001.png)
+![cover](main-export/002.png)
+![cover](main-export/003.png)
+![cover](main-export/004.png)
+![cover](main-export/005.png)
+![cover](main-export/006.png)
+![cover](main-export/007.png)
+![cover](main-export/008.png)
+![cover](main-export/009.png)
+![cover](main-export/010.png)
